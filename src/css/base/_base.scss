@@ -1,0 +1,9 @@
+.cardHover:hover {
+    background-color: $danger;
+}
+
+.card:hover>.card-body>.iconHover {
+    animation: flip;
+    animation-duration: 0.5s;
+    color: $white!important;
+}

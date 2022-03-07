@@ -1,5 +1,6 @@
-$primary:#8ab6f0;
-
-@import "../../node_modules/bootswatch/dist/materia/variables";
+@import "../../node_modules/bootswatch/dist/vapor/variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../../node_modules/bootswatch/dist/materia/bootswatch";
+@import "../../node_modules/bootswatch/dist/vapor/bootswatch";
+@import "./base/base";
+@import "./components/home/home";
+@import "./components/about/about";

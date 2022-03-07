@@ -1,13 +1,13 @@
 import React from 'react'
-import { SkillsItem } from './SkillsItem'
+import { HobbiesItem } from './HobbiesItem'
 
-export const Skills = () => {
+export const Hobbies = () => {
     return (
         <section className="d-flex flex-column justify-content-center align-items-center py-5 text-white">
-            <h2 className="text-center">Habilidades</h2>
             <div className="container">
+                <h2 className="text-center">Pasatiempos</h2>
                 <div className="row d-flex justify-content-center px-3">
-                    <SkillsItem />
+                    <HobbiesItem />
                 </div>
             </div>
         </section>
