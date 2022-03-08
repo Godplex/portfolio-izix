@@ -11,13 +11,16 @@ export const About = () => {
                 <p className="h5">
                     Soy estudiante en proceso de grado de tecnología sistematización de datos en la
                     Universidad Distrital Francisco José de Caldas, comprometido con los
-                    proyectos que se propone, desarrollandolos con dedicación,con gran interés por el desarrollo de software y 
-                    el diseño frontend, con capacidad de aprender y aplicando los conocimientos en el 
+                    proyectos que se propone, desarrollandolos con dedicación,con gran interés por el desarrollo de software y
+                    el diseño frontend, con capacidad de aprender y aplicando los conocimientos en el
                     campo profesional.
                 </p>
                 <p className="h5">
                     Me gusta trabajar en equipo, soy responsable, organizado, proactivo y con un buen manejo de relaciones interpersonales.
                 </p>
+                <a className="btn btn-outline-dark btn-lg px-5 py-2 mt-4" href="#" target="_blank" rel="noopener noreferrer">
+                    <i className="fa-solid fa-download fa-xl"></i> <span className="h5"> Descargar CV</span>
+                </a>
             </div>
         </section>
     )

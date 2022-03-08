@@ -1,0 +1,12 @@
+#education {
+  min-height: 50vh;
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+
+  #education {
+    min-height: 25vh;
+  }
+
+}
+
