@@ -1,4 +1,5 @@
 import { About } from './components/about/About';
+import { Contact } from './components/contact/Contact';
 import { Education } from './components/education/Education';
 import { Hobbies } from './components/hobbies/Hobbies';
 import { Home } from './components/home/Home';
@@ -16,6 +17,7 @@ export const App = () => {
       <Hobbies />
       <Education />
       <Projects />
+      <Contact />
     </>
   )
 }

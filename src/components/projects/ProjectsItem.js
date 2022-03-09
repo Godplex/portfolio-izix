@@ -1,37 +1,32 @@
-import { useState } from 'react';
+import React from 'react'
 
-export const ProjectsItem = ({ type, name, desc, img, code, youtube }) => {
-
-    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
-    var match = youtube.match(regExp);
-    const id = (match && match[7].length === 11) && match[7];
-
+export const ProjectsItem = ({ img, title, description, repository, demo }) => {
     return (
-        <div className="px-2">
-            <div className={`card px-2 pt-5 border-danger mt-4 w-100 ${type}`}>
-                <div className="img-wrapper">
-                    <img src={img} className="card-img-top" height="170" style={{ objectFit: 'contain' }} alt={name} />
+        <div class="py-1 px-2">
+            <div class="card p-3 border-danger mb-3 w-100">
+                <div class="img-wrapper">
+                    <img src={img} class="card-img-top" alt={title} />
                 </div>
-                <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
-                    <p className="card-text">
-                        {desc}
-                    </p>
-                    <div className="row">
-                        <div className="col-6 d-flex justify-content-start">
-                            <a href={code} target="_blank" rel="noopener noreferrer" className="btn btn-labeled btn-outline-danger card-btnMore m-1">
-                                <span className="btn-label"><i className="fa fa-code fa-xl"></i></span> Repositorio
+                <div class="card-body">
+                    <h5 class="card-title">{title}</h5>
+                    <p class="card-text">{description}</p>
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <a href={repository} target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger m-1">
+                                Código <span class="btn-label"><i class="fa fa-code"></i></span>
                             </a>
                         </div>
-                        <div className="col-6 d-flex justify-content-end">
-                            <button type="button" className="btn btn-labeled btn-outline-danger card-btnMore m-1">
-                                <span className="btn-label"><i class="fa-solid fa-eye fa-xl"></i></span> Ver demo
-                            </button>
+                        <div class="col-6 d-flex justify-content-end">
+                            {
+                                (demo.length != 0) ? <a href={demo} target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger m-1">
+                                    Demo <span class="btn-label"><i class="fa fa-code"></i></span>
+                                </a> : ""
+                            }
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     )
 }

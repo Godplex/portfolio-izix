@@ -1,88 +1,69 @@
-import React, { useState } from 'react'
-import { ProjectsItem } from './ProjectsItem';
-import { projectsData } from '../../data/projects/projectsData';
-import { projectsButtons } from '../../data/projects/projectsButtons';
-import { ProjectsButtons } from './ProjectsButtons';
-import { ArrowButton } from '../arrowButton/ArrowButton';
-import Slider from 'react-slick/lib/slider';
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { ProjectsItem } from "./ProjectsItem";
+import decoder from "../../assets/portfolio/Decoder.png";
+import hangman from "../../assets/portfolio/Hagman.png";
+import comic from "../../assets/portfolio/JDComics.png";
+import izix from "../../assets/portfolio/IZ1X.png";
+import hotel from "../../assets/portfolio/MyHotel.jpg";
 
 export const Projects = () => {
 
-    const [filteredProject, setfilteredProject] = useState(projectsData);
-
-    const [activeIndex, setActiveIndex] = useState('All-Works');
-
-    function show(id) {
-        setActiveIndex(id);
-        if (id !== 'All-Works') {
-            const A = projectsData.filter(e => e.type === id);
-            setfilteredProject(A);
-        } else {
-            const A = projectsData;
-            setfilteredProject(A);
-        }
-    };
-
-    var settings = {
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        autoplaySpeed: 3000,
-        cssEase: "linear",
-        dotsClass: "slick-dots slick-thumb",
-        customPaging: function (i) {
-            return <div className="dot"></div>;
+    const projects = [
+        {
+            img: decoder,
+            title: "Encriptador de texto",
+            description: "Encriptador de texto desarrollado en HTML y JavaScript",
+            repository: "https://github.com/Godplex/decoder-izix",
+            demo: "https://godplex.github.io/decoder-izix/",
         },
-        prevArrow: <ArrowButton icon={"fa-solid fa-angle-left"} position="start" color="text-danger" />,
-        nextArrow: <ArrowButton icon={"fa-solid fa-angle-right"} position="end" color="text-danger" />,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    };
+        {
+            img: comic,
+            title: "JDComics",
+            description: "Web e-commerce de cómics y figuras de acción desarrollado en PHP y JavaScript",
+            repository: "https://gitlab.com/keideriz1x/TiendaComic",
+            demo: "",
+        },
+        {
+            img: hangman,
+            title: "Juego de ahorcado",
+            description: "Juego de ahorcado desarrollado en HTML y JavaScript",
+            repository: "https://github.com/Godplex/hangman-izix",
+            demo: "https://godplex.github.io/hangman-izix/",
+        },
+        {
+            img: izix,
+            title: "IZ1X",
+            description: "Web e-commerce de videojuegos desarrollado en PHP y JavaScript",
+            repository: "https://gitlab.com/keideriz1x/Games",
+            demo: "",
+        },
+        {
+            img: hotel,
+            title: "My Hotel",
+            description: "Aplicación de hotel desarrollada en Android Studio y NodeJS",
+            repository: "https://gitlab.com/keideriz1x/MyHotel",
+            demo: "",
+        },
+    ];
 
     return (
         <section className="d-flex flex-column justify-content-center align-items-center py-5 text-white" id="projects">
-            <h2 className="text-center">Proyectos</h2>
-            <div className="container px-5">
-                <div className="text-center">
-                    <ul className="list-inline mx-auto">
+            <div className="container px-4">
+                <h2 className="text-center pb-4">Proyectos</h2>
+                <ResponsiveMasonry
+                    columnsCountBreakPoints={{ 576: 1, 768: 2, 992: 3 }}
+                >
+                    <Masonry>
                         {
-                            projectsButtons.map(item => (
-                                <ProjectsButtons
-                                    key={item.id}
-                                    items={item}
-                                    activeIndex={activeIndex}
-                                    show={show}
+                            projects.map(item => (
+                                <ProjectsItem
+                                    key={item.name}
+                                    {...item}
                                 />
                             ))
                         }
-                    </ul>
-                </div>
-                <Slider {...settings}>
-                {
-                    filteredProject.map(item => (
-                        <ProjectsItem
-                            key={item.id}
-                            {...item}
-                        />
-                    ))
-                }
-                </Slider>
+                    </Masonry>
+                </ResponsiveMasonry>
             </div>
         </section>
     )
