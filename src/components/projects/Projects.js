@@ -51,7 +51,7 @@ export const Projects = () => {
             <div className="container px-4">
                 <h2 className="text-center pb-4">Proyectos</h2>
                 <ResponsiveMasonry
-                    columnsCountBreakPoints={{ 576: 1, 768: 2, 992: 3 }}
+                    columnsCountBreakPoints={{ 540: 1, 720: 2, 960: 3 }}
                 >
                     <Masonry>
                         {
