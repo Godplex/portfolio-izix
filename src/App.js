@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <>
       <Menu />
-      <ScrollSpy scrollThrottle={100} useBoxMethod={false} offsetTop={-100}>
+      <ScrollSpy scrollThrottle={50} useBoxMethod={false} offsetTop={-70}>
         <Home />
         <About />
         <Skills />

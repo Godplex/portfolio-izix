@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ContactItem = ({ name, icon, description }) => {
     return (
-        <div className="col-lg-4 px-2 py-1 d-flex align-items-strench">
+        <div className="col-lg-4 px-2 py-2 d-flex align-items-strench">
             <div className="card px-4 border-danger w-100">
                 <div className="card-body">
                     <div className="row align-items-center">
