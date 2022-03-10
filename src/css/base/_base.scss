@@ -1,3 +1,4 @@
+
 .cardHover:hover {
     background-color: $danger;
 }
@@ -50,5 +51,30 @@
 
 .prev-slick {
     left: -25px !important;
+}
+
+nav a {
+        color: $white !important;  
+}
+
+nav a {
+    &:hover {
+        color: $danger !important;
+    }
+}
+
+.dropdown-toggle {
+    color: $danger !important;
+}
+
+.active-scroll-spy {
+    @media (min-width: 913PX) {
+
+        color: $danger !important;
+        border-bottom: 3px solid $danger;
+
+    }
+
+
 }
 

@@ -1,0 +1,11 @@
+#contact {
+    min-height: 50vh;
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+
+    #contact {
+        min-height: 25vh;
+    }
+
+}

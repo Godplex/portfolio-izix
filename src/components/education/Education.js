@@ -1,6 +1,6 @@
 import { EducationItem } from './EducationItem';
-import uDistrital from "../../assets/logo-udistrital.png";
-import alura from "../../assets/logo-alura.png";
+import uDistrital from "../../assets/education/logo-udistrital.png";
+import alura from "../../assets/education/logo-alura.png";
 
 export const Education = () => {
 
@@ -19,9 +19,9 @@ export const Education = () => {
 
     return (
         <section className="d-flex flex-column justify-content-center align-items-center bg-primary text-white py-5" id="education">
-            <div className="container px-5">
-                <h2 className="text-center pb-4">Formación academica</h2>
-                <div className="row px-3 d-flex justify-content-center">
+            <h2 className="text-center pb-4">Formación academica</h2>
+            <div className="container px-4">
+                <div className="row d-flex justify-content-center">
                     {
                         educations.map(item => (
                             <EducationItem

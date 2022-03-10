@@ -1,26 +1,31 @@
 import React from 'react'
 
 export const ProjectsItem = ({ img, title, description, repository, demo }) => {
+
+    const regex = new RegExp('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?');
+
     return (
-        <div class="py-1 px-2">
-            <div class="card p-3 border-danger mb-3 w-100">
-                <div class="img-wrapper">
-                    <img src={img} class="card-img-top" alt={title} />
+        <div className="py-1 px-2">
+            <div className="card p-3 border-danger mb-3 w-100">
+                <div className="img-wrapper">
+                    <img src={img} className="card-img-top" alt={title} />
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">{title}</h5>
-                    <p class="card-text">{description}</p>
-                    <div class="row">
-                        <div class="col-6 d-flex justify-content-start">
-                            <a href={repository} target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger m-1">
-                                Código <span class="btn-label"><i class="fa fa-code"></i></span>
+                <div className="card-body">
+                    <h5 className="card-title">{title}</h5>
+                    <p className="card-text">{description}</p>
+                    <div className="row">
+                        <div className="col-6 d-flex justify-content-start">
+                            <a href={repository} target="_blank" rel="noopener noreferrer" className="btn btn-outline-danger m-1">
+                                <i className="fa fa-code fa-lg"></i> <span className="d-none d-lg-inline h5">Código</span>
                             </a>
                         </div>
-                        <div class="col-6 d-flex justify-content-end">
+                        <div className="col-6 d-flex justify-content-end">
                             {
-                                (demo.length != 0) ? <a href={demo} target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger m-1">
-                                    Demo <span class="btn-label"><i class="fa fa-code"></i></span>
-                                </a> : ""
+                                (regex.test(demo)) 
+                                ? <a href={demo} target="_blank" rel="noopener noreferrer" className="btn btn-outline-danger m-1">
+                                    <span className="d-none d-lg-inline h5">Demo</span> <i className="fa-solid fa-eye fa-lg"></i>
+                                </a> 
+                                : ""
                             }
 
                         </div>

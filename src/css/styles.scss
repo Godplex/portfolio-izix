@@ -1,4 +1,9 @@
+
 @import "../../node_modules/bootswatch/dist/vapor/variables";
+
+//body-bg solo disponible en vapor
+$primary :lighten($color: $body-bg, $amount: 5);
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootswatch/dist/vapor/bootswatch";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
@@ -10,3 +15,4 @@
 @import "./components/hobbies/hobbies";
 @import "./components/education/education";
 @import "./components/projects/projects";
+@import "./components/contact/contact";
