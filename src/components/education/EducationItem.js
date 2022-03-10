@@ -2,7 +2,7 @@
 export const EducationItem = ({ img, name, end }) => {
 
     return (
-        <div className="col-md-4 px-2 py-1 d-flex align-items-strench">
+        <div className="col-md-4 px-2 py-2 d-flex align-items-strench">
             <div className="card p-2 border-danger w-100">
                 <div className="card-body">
                     <div className="text-center">

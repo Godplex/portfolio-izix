@@ -9,7 +9,7 @@ export const settingSlick = {
     slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     dotsClass: "slick-dots slick-thumb",
     customPaging: function (i) {
