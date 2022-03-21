@@ -65,14 +65,14 @@ export const ContactForm = () => {
             <form onSubmit={onSubmit}>
                 <div className="row">
                     <div className="col-lg-6">
-                        <input type="name" name="name" className="form-control form-control-lg mt-3" autoComplete="off" placeholder="Tu nombre" value={toSend.name} onChange={handleChange} required />
+                        <input type="name" name="name" maxLength={50} className="form-control form-control-lg mt-3" autoComplete="off" placeholder="Tu nombre" value={toSend.name} onChange={handleChange} required />
                     </div>
                     <div className="col-lg-6">
                         <input type="email" name="email" className="form-control form-control-lg mt-3" autoComplete="off" placeholder="Tu correo electrónico" value={toSend.email} onChange={handleChange} required />
                     </div>
                     <div className="col-lg-12">
-                        <input type="text" name="subject" className="form-control form-control-lg mt-3" autoComplete="off" placeholder="Tu asunto" value={toSend.subject} onChange={handleChange} required />
-                        <textarea name="message" className="form-control form-control-lg mt-3" autoComplete="off" placeholder="Tu mensaje" rows="4" value={toSend.message} onChange={handleChange} required></textarea>
+                        <input type="text" name="subject" maxLength={50} className="form-control form-control-lg mt-3" autoComplete="off" placeholder="Tu asunto" value={toSend.subject} onChange={handleChange} required />
+                        <textarea name="message" maxLength={300} className="form-control form-control-lg mt-3" autoComplete="off" placeholder="Tu mensaje" rows="3" value={toSend.message} onChange={handleChange} required></textarea>
                         <div className="text-md-start text-center">
                             <button type="submit" className="btn btn-outline-danger btn-lg my-3 px-5">Enviar Mensaje</button>
                         </div>
