@@ -32,7 +32,7 @@ export const Home = () => {
                                 fontSize: "4rem",
                                 fontWeight: "bold",
                             }}
-                            text="Hola, soy Julián Rincón"
+                            text="Hola, soy Julián Rincón."
                             cursorColor="#FFFFFF"
                             typeSpeed={70}
                             hideCursorAfterText={true}
