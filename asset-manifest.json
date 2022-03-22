@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio-izix/static/css/main.63ab9c22.css",
-    "main.js": "/portfolio-izix/static/js/main.51ead467.js",
+    "main.js": "/portfolio-izix/static/js/main.7e0bc426.js",
     "static/media/JDComics.png": "/portfolio-izix/static/media/JDComics.1abb79c65697c27b280e.png",
     "static/media/IZ1X.png": "/portfolio-izix/static/media/IZ1X.d2b58b277361e59282e4.png",
+    "static/media/profile.png": "/portfolio-izix/static/media/profile.f959e5962b533b464173.png",
     "static/media/Decoder.png": "/portfolio-izix/static/media/Decoder.0db4cf625e74e4b0acc1.png",
     "static/media/Hagman.png": "/portfolio-izix/static/media/Hagman.82b50ad6600b00558a99.png",
     "static/media/MyHotel.jpg": "/portfolio-izix/static/media/MyHotel.cfd7275f0f612a15a1ba.jpg",
     "static/media/logo-udistrital.png": "/portfolio-izix/static/media/logo-udistrital.3299b8cd12de4b2289b4.png",
-    "static/media/profile.png": "/portfolio-izix/static/media/profile.22f3d36f21a7de948b6d.png",
     "static/media/cv.pdf": "/portfolio-izix/static/media/cv.fc18e5428b336f7f1ef2.pdf",
     "static/media/slick.svg": "/portfolio-izix/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/portfolio-izix/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -16,10 +16,10 @@
     "static/media/slick.woff": "/portfolio-izix/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio-izix/index.html",
     "main.63ab9c22.css.map": "/portfolio-izix/static/css/main.63ab9c22.css.map",
-    "main.51ead467.js.map": "/portfolio-izix/static/js/main.51ead467.js.map"
+    "main.7e0bc426.js.map": "/portfolio-izix/static/js/main.7e0bc426.js.map"
   },
   "entrypoints": [
     "static/css/main.63ab9c22.css",
-    "static/js/main.51ead467.js"
+    "static/js/main.7e0bc426.js"
   ]
 }
