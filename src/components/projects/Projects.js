@@ -5,6 +5,7 @@ import hangman from "../../assets/portfolio/Hagman.png";
 import comic from "../../assets/portfolio/JDComics.png";
 import izix from "../../assets/portfolio/IZ1X.png";
 import hotel from "../../assets/portfolio/MyHotel.jpg";
+import AluraGeek from "../../assets/portfolio/AluraGeek.png";
 import { ProjectsButtonItem } from "./ProjectsButtonItem";
 import { useState } from "react";
 
@@ -38,7 +39,7 @@ export const Projects = () => {
         {
             img: decoder,
             title: "Encriptador de texto",
-            description: "Encriptador de texto desarrollado en HTML y JavaScript",
+            description: "Encriptador de texto desarrollado en React.",
             repository: "https://github.com/Godplex/decoder-izix",
             demo: "https://godplex.github.io/decoder-izix/",
             type: "Web-Development",
@@ -46,25 +47,33 @@ export const Projects = () => {
         {
             img: hangman,
             title: "Juego de ahorcado",
-            description: "Juego de ahorcado desarrollado en HTML y JavaScript",
+            description: "Juego de ahorcado desarrollado en React.",
             repository: "https://github.com/Godplex/hangman-izix",
             demo: "https://godplex.github.io/hangman-izix/",
             type: "Web-Development",
         },
+        {
+            img: AluraGeek,
+            title: "AluraGeek",
+            description: "Web e-commerce de cómics y figuras de acción desarrollado en React.",
+            repository: "https://github.com/Godplex/alurageek-izix",
+            demo: "https://godplex.github.io/alurageek-izix",
+            type: "Web-Development",
+        },
     ];
 
-    const projectsButtonsItem=[
+    const projectsButtonsItem = [
         {
-            'id':'All-Works',
-            'name':'Todos los trabajos',
+            'id': 'All-Works',
+            'name': 'Todos los trabajos',
         },
         {
-            'id':'Web-Development',
-            'name':'Desarrollo web',
+            'id': 'Web-Development',
+            'name': 'Desarrollo web',
         },
         {
-            'id':'App-Development',
-            'name':'Desarrollo de apps',
+            'id': 'App-Development',
+            'name': 'Desarrollo de apps',
         }
     ];
 

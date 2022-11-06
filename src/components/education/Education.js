@@ -7,13 +7,18 @@ export const Education = () => {
     const educations = [
         {
             img: uDistrital,
-            name: "Tecnología en sistematización de datos",
+            name: "Ingenieria en telematica",
             end: "En curso"
+        },
+        {
+            img: uDistrital,
+            name: "Tecnología en sistematización de datos",
+            end: "Finalizado"
         },
         {
             img: alura,
             name: "Desarrollo Web",
-            end: "En curso"
+            end: "Finalizado"
         },
     ];
 

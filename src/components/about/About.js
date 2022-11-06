@@ -6,12 +6,12 @@ export const About = () => {
             <div className="container px-4 py-5">
                 <h2 className="text-center pb-4">Sobre mí</h2>
                 <p className="h5 text-md-start text-center">
-                    Mi nombre es Julián Rincón, tengo 22 años y soy de Bogotá, Colombia.
+                    Mi nombre es Julián Rincón, tengo 23 años y soy de Bogotá, Colombia.
                 </p>
                 <p className="h5 text-md-start text-center">
-                    Soy estudiante en proceso de grado de tecnología sistematización de datos en la
-                    Universidad Distrital Francisco José de Caldas, comprometido con los
-                    proyectos que se propone, desarrollandolos con dedicación,con gran interés por el desarrollo de software y
+                    Soy estudiante  de séptimo semestre de Ingeniería en
+                    Telemática en la Universidad Distrital Francisco José de
+                    Caldas, comprometido con los proyectos que se propone, desarrollandolos con dedicación,con gran interés por el desarrollo de software y
                     el diseño frontend, con capacidad de aprender y aplicando los conocimientos en el
                     campo profesional.
                 </p>

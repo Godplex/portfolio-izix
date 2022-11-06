@@ -12,8 +12,8 @@ export const settingSlick = {
     autoplaySpeed: 4000,
     cssEase: "linear",
     dotsClass: "slick-dots slick-thumb",
-    customPaging: function (i) {
-        return <div className="dot"></div>;
+    customPaging: (i) => {
+        return <div className="dot">{i + 1}</div>;
     },
     prevArrow: <ArrowButton icon={"fa-solid fa-angle-left"} position="start" />,
     nextArrow: <ArrowButton icon={"fa-solid fa-angle-right"} position="end" />,
