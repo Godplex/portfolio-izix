@@ -49,6 +49,10 @@ export const Skills = () => {
             name: "SASS",
             icon: "fa-brands fa-sass"
         },
+        {
+            name: "Python",
+            icon: "fa-brands fa-python"
+        },
     ];
 
     return (
